@@ -7,7 +7,7 @@ export default function Header(){
     <div className='my-navbar'>
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
-                <img src={logo} className="img-fluid" alt="Logo de l'entreprise" />
+            <Link className="nav-link" to="/"> <img src={logo} className="img-fluid" alt="Logo du Camping" /></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

@@ -10,6 +10,10 @@ body {
   right: 0;
   z-index: 1000;
 }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 .navbar-nav {
   display: flex;
   margin-left: auto;
@@ -49,6 +53,13 @@ body {
   background-color: rgb(219, 234, 245);
   transition: ease-in;
   transition-duration: 0.3s;
+}
+
+/*Responsive Navbar*/
+@media screen and (max-width: 480px) {
+  .navbar-nav .nav-item {
+    text-align: center;
+  }
 }
 
 /* Composant Accueil Style*/
@@ -183,7 +194,9 @@ body {
     width: 100%;
     height: auto;
   }
-
+  .navbar-nav .nav-item {
+    text-align: center;
+  }
   .titles {
     top: 40%;
     left: 50%;
@@ -251,7 +264,9 @@ body {
     width: 100%;
     height: auto;
   }
-
+  .navbar-nav .nav-item {
+    text-align: center;
+  }
   .titles {
     top: 35%;
     left: 50%;
@@ -305,22 +320,24 @@ body {
   .presentation .text h5 {
     font-size: 16px;
   }
-  .presentation .images{
+  .presentation .images {
     margin-top: 15px;
     margin-right: 65px;
     margin-bottom: 40px;
- }
-  
+  }
 }
 
 @media (max-width: 480px) {
   #mainImg {
-    margin-top: 80px;
+    margin-top: 86px;
+  }
+  .navbar-nav .nav-item {
+    text-align: center;
   }
 
   .titles {
     text-align: center;
-    top: 23%;
+    top: 19%;
   }
 
   #title1 {
@@ -335,7 +352,7 @@ body {
     flex-direction: column;
     gap: 15px;
   }
-  .accueil-imgs #a1{
+  .accueil-imgs #a1 {
     width: 80%;
   }
   .accueil-imgs img {
@@ -1135,7 +1152,8 @@ body {
 
   .contact-form .contact-title {
     font-size: 22px;
-    margin-bottom: 15px;
+    padding-top: 15px;
+    margin-bottom: 25px;
   }
 
   .contact-form .form-label {
@@ -1540,11 +1558,11 @@ body {
 @media only screen and (max-width: 480px) {
   #login-photo {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 80px;
   }
 
   .login-form {
-    margin-top: 20px;
+    margin-top: 30px;
     width: 90%;
   }
 
@@ -1558,7 +1576,7 @@ body {
 
   #email-icon,
   #pwd-icon {
-    width: 12%;
+    width: 9%;
   }
 
   .login-form .form-label {
