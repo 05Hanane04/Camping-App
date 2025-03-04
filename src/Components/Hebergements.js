@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import camping from "../images/camping.jpg";
 import h1 from "../heberg/h1.jpg";
 import h2 from "../heberg/h2.jpg";
@@ -18,6 +18,28 @@ import h15 from "../heberg/h15.jpg";
 import h16 from "../heberg/h16.jpg";
 
 export default function Hebergements() {
+  const [nomComplet,setNomComplet]=useState("");
+  const [email,setEmail]=useState("");
+  const [tel,setTelephone]=useState("");
+  const [dateDebut,setDateDebut]=useState("");
+  const [dateDepart,setDateDepart]=useState("");
+  const types = ['','Tente','Chambre','Appartement','Dar Ghitounes'];
+  const [type,setType] =useState("");
+  const [nbAdultes,setNbAdultes]=useState("");
+  const [nbEnfants,setNbEnfants]=useState("");
+  const [commentaire,setCommentaire]=useState("");
+  function handleSubmit(e){
+    e.preventDefault();
+    if (nomComplet === '' || email === '' || tel === '' || dateDebut === '' || dateDepart === '' || type === '' || nbAdultes === '' || nbEnfants === ''){
+      alert("Tous les champs sont nécessaires");
+
+    }else{
+      alert(`Bonjour ${nomComplet}, votre réservation a été envoyer avec succés`);
+
+    }
+  }
+
+
   return (
     <div className="hebergements-div">
       <img id="img1" src={camping} alt="camping" />
@@ -99,38 +121,36 @@ export default function Hebergements() {
         <h3 className="contact-title">Formulaire de Réservation</h3>
         <div className="mb-3">
           <label className="form-label">Nom & Prénom</label>
-          <input type="text" className="form-control" />
+          <input type="text" className="form-control" onChange={(e)=>{setNomComplet(e.target.value)}} value={nomComplet}/>
           <label className="form-label">Addresse E-mail</label>
           <input
             type="email"
             className="form-control"
-            placeholder="name@example.com"
-          />
+            placeholder="name@example.com" onChange={(e)=>{setEmail(e.target.value)}} value={email}
+            />
           <label className="form-label">Téléphone</label>
-          <input type="tel" className="form-control" />
+          <input type="tel" className="form-control" onChange={(e)=>{setTelephone(e.target.value)}} value={tel}/>
           <label className="form-label">Date d'arrivée</label>
-          <input type="date" className="form-control" />
+          <input type="date" className="form-control" onChange={(e)=>{setDateDebut(e.target.value)}} value={dateDebut}/>
           <label className="form-label">Date de départ</label>
-          <input type="date" className="form-control" />
+          <input type="date" className="form-control" onChange={(e)=>{setDateDepart(e.target.value)}} value={dateDepart}/>
           <label className="form-label">Type d'hébergement</label>
-          <select class="form-select" aria-label="Default select example">
-            <option selected></option>
-            <option value="1">Tente</option>
-
-            <option value="2">Chambre</option>
-            <option value="3">Appartement</option>
-            <option value="4">Dar Guitounes</option>
+          <select class="form-select" aria-label="Default select example" onChange={(e)=>{setType(e.target.value)}}>
+            {types.map((type,index)=>(
+             <option key={index}>{type}</option>
+            ))}
+          
           </select>
           <label className="form-label">Nombre d'adultes</label>
-          <input type="number" className="form-control" />
+          <input type="number" className="form-control" min={1} max={5} onChange={(e)=>{setNbAdultes(e.target.value)}} value={nbAdultes}/>
           <label className="form-label">Nombre d'enfants</label>
-          <input type="number" className="form-control" />
+          <input type="number" className="form-control" min={0} max={5} onChange={(e)=>{setNbEnfants(e.target.value)}} value={nbEnfants}/>
         </div>
         <div className="mb-3">
           <label className="form-label">Commentaire</label>
-          <textarea className="form-control" rows="3"></textarea>
+          <textarea className="form-control" rows="3" onChange={(e)=>{setCommentaire(e.target.value)}} value={commentaire}></textarea>
         </div>
-        <button type="button" id="submit-btn" class="btn btn-dark">
+        <button type="submit" onClick={handleSubmit} id="submit-btn" class="btn btn-dark">
           Envoyer
         </button>
       </div>

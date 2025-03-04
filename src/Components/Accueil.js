@@ -5,6 +5,7 @@ import a2 from "../images/a2.jpg";
 import a3 from "../images/a3.jpg";
 import s1 from '../images/s1.jpg';
 import s2 from '../images/s2.jpg';
+import arrow from '../images/arrow.png';
 import { Link } from "react-router-dom";
 
 
@@ -17,6 +18,7 @@ export default function Accueil() {
         <h2 id="title1"> Camping Terre d'Océan</h2>
         <h5 id="title2">Camping à Taghazout</h5>
       </div>
+      <div className="intro">En savoir plus sur le Camping <img src={arrow} alt=""/></div>
       <div className="accueil-imgs">
         <img src={a1} alt="a1" id="a1"/>
         <img src={a2} alt="a2" />
