@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Camping-App/static/css/main.70d9b012.css",
-    "main.js": "/Camping-App/static/js/main.98476ded.js",
+    "main.css": "/Camping-App/static/css/main.8fc231ea.css",
+    "main.js": "/Camping-App/static/js/main.c309f6b2.js",
     "static/js/156.4376967a.chunk.js": "/Camping-App/static/js/156.4376967a.chunk.js",
     "static/media/parachute.png": "/Camping-App/static/media/parachute.d38c610c18fa38ecb9fd.png",
     "static/media/pingpong.png": "/Camping-App/static/media/pingpong.a0b7ff71282fe5a189d4.png",
@@ -21,7 +21,6 @@
     "static/media/h1.jpg": "/Camping-App/static/media/h1.4aa40cc75e8606912495.jpg",
     "static/media/piscine.jpg": "/Camping-App/static/media/piscine.268250ed754d4a662434.jpg",
     "static/media/s1.jpg": "/Camping-App/static/media/s1.3cccbc0142d4a940cb1e.jpg",
-    "static/media/localisation.png": "/Camping-App/static/media/localisation.fb2ab45a81e461429e45.png",
     "static/media/h2.jpg": "/Camping-App/static/media/h2.43ee68109484691dbd27.jpg",
     "static/media/h8.jpg": "/Camping-App/static/media/h8.be095721390bf9664d31.jpg",
     "static/media/h3.jpg": "/Camping-App/static/media/h3.1ec3a945aabc7bee7776.jpg",
@@ -44,12 +43,12 @@
     "static/media/email.png": "/Camping-App/static/media/email.833752054f4d7fbe7eb0.png",
     "static/media/facebook.png": "/Camping-App/static/media/facebook.8d51a55626e9bf107f8f.png",
     "index.html": "/Camping-App/index.html",
-    "main.70d9b012.css.map": "/Camping-App/static/css/main.70d9b012.css.map",
-    "main.98476ded.js.map": "/Camping-App/static/js/main.98476ded.js.map",
+    "main.8fc231ea.css.map": "/Camping-App/static/css/main.8fc231ea.css.map",
+    "main.c309f6b2.js.map": "/Camping-App/static/js/main.c309f6b2.js.map",
     "156.4376967a.chunk.js.map": "/Camping-App/static/js/156.4376967a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.70d9b012.css",
-    "static/js/main.98476ded.js"
+    "static/css/main.8fc231ea.css",
+    "static/js/main.c309f6b2.js"
   ]
 }
