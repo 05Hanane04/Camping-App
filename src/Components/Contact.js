@@ -99,7 +99,7 @@ export default function Contact() {
         
       </div>
 
-      <div style={{ marginTop: "-400px" }} className="contact-form">
+      <div  className="contact-form">
         <form class="row g-3">
           <div className="col-12">
             <label className="form-label">Nom & Prénom</label>

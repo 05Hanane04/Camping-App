@@ -234,8 +234,8 @@ export default function Hebergements() {
         <h5>Contact & Réservation</h5>
         <h5>Tél : +212 6 75 58 54 07 / +212 8 80 66 51 30</h5>
       </div>
-
-      <div style={{ marginTop: "-400px" }} className="contact-form">
+{/* style={{ marginTop: "-400px" }} */}
+      <div  className="contact-form">
         <form class="row g-3">
           <div className="col-12">
             <label className="form-label">Nom & Prénom</label>
