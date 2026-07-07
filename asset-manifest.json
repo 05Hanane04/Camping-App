@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Camping-App/static/css/main.a1e09e38.css",
+    "main.css": "/Camping-App/static/css/main.83c23b29.css",
     "main.js": "/Camping-App/static/js/main.ba4bf344.js",
     "static/js/156.4376967a.chunk.js": "/Camping-App/static/js/156.4376967a.chunk.js",
     "static/media/parachute.png": "/Camping-App/static/media/parachute.d38c610c18fa38ecb9fd.png",
@@ -43,12 +43,12 @@
     "static/media/email.png": "/Camping-App/static/media/email.833752054f4d7fbe7eb0.png",
     "static/media/facebook.png": "/Camping-App/static/media/facebook.8d51a55626e9bf107f8f.png",
     "index.html": "/Camping-App/index.html",
-    "main.a1e09e38.css.map": "/Camping-App/static/css/main.a1e09e38.css.map",
+    "main.83c23b29.css.map": "/Camping-App/static/css/main.83c23b29.css.map",
     "main.ba4bf344.js.map": "/Camping-App/static/js/main.ba4bf344.js.map",
     "156.4376967a.chunk.js.map": "/Camping-App/static/js/156.4376967a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1e09e38.css",
+    "static/css/main.83c23b29.css",
     "static/js/main.ba4bf344.js"
   ]
 }
